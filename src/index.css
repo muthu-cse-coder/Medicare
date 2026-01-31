@@ -4,10 +4,8 @@
 
 /* Base Mobile Styles */
 @media (max-width: 768px) {
-  /* Container */
-  .container {
-    padding: 0 16px;
-  }
+ 
+  
 
   /* Header */
   .header-container {
@@ -70,15 +68,18 @@
   }
 
   /* Doctors Grid */
-  .doctors-grid {
+  .doctors-grid { 
     grid-template-columns: 1fr;
     gap: 16px;
-  }
+    justify-items: center;
+    display: none;
+   }
 
-  .doctor-card-header {
+   .doctor-card-header {
     flex-direction: column;
     text-align: center;
-  }
+    justify-items: center;
+  } 
 
   .doctor-image {
     width: 60px;
@@ -101,14 +102,7 @@
     margin: 0 auto;
   }
 
-  .doctor-details-stats {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 
-  .doctor-details-body {
-    grid-template-columns: 1fr;
-  }
 
   .booking-sidebar {
     position: static;
@@ -326,9 +320,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .doctors-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
 
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -2851,14 +2843,83 @@ html, body {
   background-color: #059669;
   transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
-
 /*end*/
+
+
+/* ============================================
+   SPECIALIZATION DOCTORS PAGE - MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Specialization Doctors Page */
+  .specialization-doctors-header {
+    padding: 16px;
+    text-align: center;
+  }
+  .specializations-container p{
+    text-align: center;
+    color: #888;
+    margin-top: 0%;
+  }
+
+  .specialization-back-btn {
+    position: static !important;
+    display: inline-flex !important;
+    margin-bottom: 16px;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .specialization-icon {
+    font-size: 56px !important;
+    margin-bottom: 12px;
+  }
+
+  .specialization-title {
+    font-size: 28px !important;
+    margin-bottom: 8px;
+  }
+
+  .specialization-description {
+    font-size: 15px !important;
+    padding: 0 16px;
+  }
+
+  /* Doctor Cards Container */
+  .doctors-section {
+    padding: 16px;
+  }
+  .doctor-card{
+    padding: 0%;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    padding: 0 4px;
+  }
+
+  /* No Doctors Message */
+  .no-doctors {
+    padding: 40px 20px;
+  }
+
+  .no-doctors-icon {
+    font-size: 48px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .specialization-icon {
+    font-size: 48px !important;
+  }
+
+  .specialization-title {
+    font-size: 24px !important;
+  }
+
+  .specialization-description {
+    font-size: 14px !important;
+  }
+}
