@@ -158,7 +158,7 @@ const Login = () => {
           <div className="form-group">
             <label className="form-label">Email Address</label>
             <div style={{ position: 'relative' }}>
-              <Mail size={18} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: '#9ca3af' }} />
+              <Mail size={18} style={{ position: 'absolute', left: '12px', top: '50%',transform: 'translateY(-50%)', color: '#9ca3af' }} />
               <input
                 type="email"
                 className="form-input"
